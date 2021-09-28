@@ -1,0 +1,13 @@
+﻿@model List<ServiTec_Pro.web.Models.ProductosModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Productos</h2>
+
+    @foreach (var producto in Model)
+    {
+        <p>@producto.Id @producto.Descripcion</p>
+    
+    }
+
