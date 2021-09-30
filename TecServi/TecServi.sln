@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiTec.webAdmin", "ServiT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiTec.Wind", "ServiTec.Wind\ServiTec.Wind.csproj", "{087A6EB6-DF90-467A-A5D4-998936F45301}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiTec.Bibl", "ServiTec.Bibl\ServiTec.Bibl.csproj", "{6CEFBC2F-BA32-4714-954C-17AA8FE57ED7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiTec.Bl", "ServiTec.Bibl\ServiTec.Bl.csproj", "{6CEFBC2F-BA32-4714-954C-17AA8FE57ED7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
