@@ -51,10 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoriasBl.cs" />
     <Compile Include="Context\SeedData.cs" />
     <Compile Include="Context\ServiTexContext.cs" />
-    <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="ProductoBibl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

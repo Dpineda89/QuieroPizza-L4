@@ -13,37 +13,29 @@ namespace ServiTec.Bibl.Context
     {
         protected override void Seed(ServiTexContext context)
         {
-            var categoria = context.Categorias.Add(new Categoria
-            {
-                Descripcion = "Electronico",
-            });
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Monitor Curvo 24.0 ",
-                Precio = 2600.00,
-                IdCategoria = categoria.Id,
+                Precio = 2600.00
             });
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Cable UTP Cat-6 caja 232 Pies ",
-                Precio = 1700.00,
-                IdCategoria = categoria.Id,
+                Precio = 1700.00
             });
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Case Army-Z20 Negro 32cm ",
-                Precio = 1100.00,
-                IdCategoria = categoria.Id,
+                Precio = 1100.00
             });
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Silla Gamer Full Relax ",
-                Precio = 5400.00,
-                IdCategoria = categoria.Id,
+                Precio = 5400.00
             });
             context.SaveChanges();
             base.Seed(context);
