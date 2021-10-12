@@ -1,4 +1,5 @@
-﻿using ServiTec.web.Models;
+﻿using ServiTec.Bibl;
+using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 
@@ -9,8 +10,10 @@ namespace ServiTec.Controllers
         // GET: Productos
         public ActionResult Index()
         {
-
-            return View();
+           var productosBl = new ProductoBibl();
+           var listadeProductos = productosBl.ObtenerProductos();
+            
+            return View(listadeProductos);
         }
     }
 }

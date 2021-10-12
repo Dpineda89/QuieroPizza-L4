@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
+using ServiTec.Bibl.Context;
+using ServiTec.Database.Context;
 
 namespace ServiTec
 {
@@ -16,6 +19,7 @@ namespace ServiTec
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            System.Data.Entity.Database.SetInitializer(new SeedData());
         }
     }
 }
