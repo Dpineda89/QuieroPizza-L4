@@ -35,6 +35,7 @@ namespace ServiTec.webAdmin.Controllers
         [HttpPost]
         public ActionResult Crear(Categoria categoria)
         {
+<<<<<<< HEAD
             if (ModelState.IsValid)
             {
                 if (categoria.Descripcion != categoria.Descripcion.Trim())
@@ -49,12 +50,17 @@ namespace ServiTec.webAdmin.Controllers
             }
 
             return View(categoria);
+=======
+            var result = this._categoriasBibl.CrearCategoria(categoria);
+            return RedirectToAction("Index");
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
         }
 
 
         [HttpPost]
         public ActionResult Editar(Categoria categoria)
         {
+<<<<<<< HEAD
             if (ModelState.IsValid)
             {
                 if (categoria.Descripcion != categoria.Descripcion.Trim())
@@ -70,6 +76,13 @@ namespace ServiTec.webAdmin.Controllers
 
             return View(categoria);
         }
+=======
+            var result = this._categoriasBibl.EditarCategoria(categoria);
+            return RedirectToAction("Index");
+        }
+
+
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 
         [HttpPost]
         public ActionResult Eliminar(Categoria categoria)

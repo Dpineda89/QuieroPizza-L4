@@ -57,6 +57,10 @@ namespace ServiTec.Wind
             // listadeProductosBindingNavigator
             // 
             this.listadeProductosBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+<<<<<<< HEAD
+=======
+            this.listadeProductosBindingNavigator.BackColor = System.Drawing.Color.Aqua;
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.listadeProductosBindingNavigator.BindingSource = this.listadeProductosBindingSource;
             this.listadeProductosBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.listadeProductosBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
@@ -81,7 +85,11 @@ namespace ServiTec.Wind
             this.listadeProductosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listadeProductosBindingNavigator.Name = "listadeProductosBindingNavigator";
             this.listadeProductosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+<<<<<<< HEAD
             this.listadeProductosBindingNavigator.Size = new System.Drawing.Size(800, 27);
+=======
+            this.listadeProductosBindingNavigator.Size = new System.Drawing.Size(600, 27);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.listadeProductosBindingNavigator.TabIndex = 0;
             this.listadeProductosBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -91,7 +99,11 @@ namespace ServiTec.Wind
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+<<<<<<< HEAD
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+=======
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
             // 
             // listadeProductosBindingSource
@@ -101,7 +113,11 @@ namespace ServiTec.Wind
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+<<<<<<< HEAD
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+=======
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
             // 
@@ -111,7 +127,11 @@ namespace ServiTec.Wind
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+<<<<<<< HEAD
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+=======
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
@@ -120,7 +140,11 @@ namespace ServiTec.Wind
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+<<<<<<< HEAD
             this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+=======
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
             // 
             // bindingNavigatorMovePreviousItem
@@ -129,7 +153,11 @@ namespace ServiTec.Wind
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+<<<<<<< HEAD
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+=======
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
             // bindingNavigatorSeparator
@@ -143,7 +171,11 @@ namespace ServiTec.Wind
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+<<<<<<< HEAD
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+=======
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
@@ -158,7 +190,11 @@ namespace ServiTec.Wind
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+<<<<<<< HEAD
             this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+=======
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -167,7 +203,11 @@ namespace ServiTec.Wind
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+<<<<<<< HEAD
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+=======
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
@@ -181,22 +221,39 @@ namespace ServiTec.Wind
             this.listadeProductosBindingNavigatorSaveItem.Enabled = false;
             this.listadeProductosBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("listadeProductosBindingNavigatorSaveItem.Image")));
             this.listadeProductosBindingNavigatorSaveItem.Name = "listadeProductosBindingNavigatorSaveItem";
+<<<<<<< HEAD
             this.listadeProductosBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+=======
+            this.listadeProductosBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.listadeProductosBindingNavigatorSaveItem.Text = "Guardar datos";
             // 
             // listadeProductosDataGridView
             // 
             this.listadeProductosDataGridView.AutoGenerateColumns = false;
+<<<<<<< HEAD
+=======
+            this.listadeProductosDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.listadeProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listadeProductosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.listadeProductosDataGridView.DataSource = this.listadeProductosBindingSource;
+<<<<<<< HEAD
             this.listadeProductosDataGridView.Location = new System.Drawing.Point(63, 71);
             this.listadeProductosDataGridView.Name = "listadeProductosDataGridView";
             this.listadeProductosDataGridView.RowHeadersWidth = 51;
             this.listadeProductosDataGridView.RowTemplate.Height = 24;
             this.listadeProductosDataGridView.Size = new System.Drawing.Size(678, 339);
+=======
+            this.listadeProductosDataGridView.Location = new System.Drawing.Point(0, 29);
+            this.listadeProductosDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listadeProductosDataGridView.Name = "listadeProductosDataGridView";
+            this.listadeProductosDataGridView.RowHeadersWidth = 51;
+            this.listadeProductosDataGridView.RowTemplate.Height = 24;
+            this.listadeProductosDataGridView.Size = new System.Drawing.Size(600, 337);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.listadeProductosDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -217,11 +274,20 @@ namespace ServiTec.Wind
             // 
             // ProductosForm
             // 
+<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listadeProductosDataGridView);
             this.Controls.Add(this.listadeProductosBindingNavigator);
+=======
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.listadeProductosDataGridView);
+            this.Controls.Add(this.listadeProductosBindingNavigator);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             this.Name = "ProductosForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductosForm";

@@ -51,10 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="CategoriasBl.cs" />
     <Compile Include="Context\SeedData.cs" />
     <Compile Include="Context\ServiTexContext.cs" />
     <Compile Include="Models\Categoria.cs" />
+=======
+    <Compile Include="Context\SeedData.cs" />
+    <Compile Include="Context\ServiTexContext.cs" />
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
     <Compile Include="Models\Producto.cs" />
     <Compile Include="ProductoBibl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

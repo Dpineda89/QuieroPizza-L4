@@ -19,8 +19,11 @@ namespace ServiTec.Database.Context
 
         public DbSet<Producto> Productos { get; set; }
 
+<<<<<<< HEAD
         public DbSet<Categoria> Categorias { get; set; }
 
+=======
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

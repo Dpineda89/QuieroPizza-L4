@@ -21,6 +21,7 @@ namespace ServiTec.Bibl
 
         public List<Producto> ObtenerProductos()
         {
+<<<<<<< HEAD
             var listadeproductos = this.serviTexContext.Productos
                 .Include("Categoria")
                 .ToList();
@@ -127,5 +128,11 @@ namespace ServiTec.Bibl
                 return false;
             }
         }
+=======
+            var listadeproductos = this.serviTexContext.Productos.ToList();
+            this.ListadeProductos = listadeproductos;
+            return this.ListadeProductos;
+        }
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
     }
 }

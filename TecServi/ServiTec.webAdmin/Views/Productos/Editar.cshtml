@@ -5,9 +5,14 @@
 }
 
 <h2>Editar</h2>
+<<<<<<< HEAD
 <hr />
 
 @using (Html.BeginForm("Editar", "Productos", FormMethod.Post, new { enctype ="multipart/form-data" }))
+=======
+
+@using (Html.BeginForm())
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 {
     @Html.AntiForgeryToken()
     
@@ -40,6 +45,7 @@
             @Html.ValidationMessageFor(model => model.IdCategoria, "", new { @class = "text-danger" })
         </div>
     </div>
+<<<<<<< HEAD
     <div class="form-group">
         <label class="control-label col-md-2"> Seleccionar Imagen </label>
         <div class="col-md-2">
@@ -49,6 +55,9 @@
             <img scr="@Model.UrlImagen" alt="@Model.Descripcion" style="width:80px; height:auto;" />
         </div>
     </div>
+=======
+
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
     <div class="form-group">
         @Html.LabelFor(model => model.Activo, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
@@ -68,5 +77,9 @@
 }
 
 <div>
+<<<<<<< HEAD
     @Html.ActionLink("Volver a Lista", "Index")
+=======
+    @Html.ActionLink("Back to List", "Index")
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 </div>
