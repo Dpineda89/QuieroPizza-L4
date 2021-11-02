@@ -13,63 +13,57 @@ namespace ServiTec.Bibl.Context
     {
         protected override void Seed(ServiTexContext context)
         {
+<<<<<<< HEAD
             var categoria = context.Categorias.Add(new Categoria
             {
                 Descripcion = "Electronico",
             });
+=======
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Monitor Curvo 24.0 ",
+<<<<<<< HEAD
                 Precio = 2600.00,
                 IdCategoria = categoria.Id,
+=======
+                Precio = 2600.00
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             });
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Cable UTP Cat-6 caja 232 Pies ",
+<<<<<<< HEAD
                 Precio = 1700.00,
                 IdCategoria = categoria.Id,
+=======
+                Precio = 1700.00
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             });
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Case Army-Z20 Negro 32cm ",
+<<<<<<< HEAD
                 Precio = 1100.00,
                 IdCategoria = categoria.Id,
+=======
+                Precio = 1100.00
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             });
 
             context.Productos.Add(new Producto
             {
                 Descripcion = " Silla Gamer Full Relax ",
+<<<<<<< HEAD
                 Precio = 5400.00,
                 IdCategoria = categoria.Id,
+=======
+                Precio = 5400.00
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
             });
-
-            context.Clientes.Add(new Cliente
-            {
-                Direccion = "Choloma",
-                Nombre = "Ramiro Perez",
-                Telefono = "31549099",
-            });
-
-
-            context.Clientes.Add(new Cliente
-            {
-                Direccion = "San Pedro Sula",
-                Nombre = "Domingo Reyes",
-                Telefono = "95497521",
-            });
-
-
-
-            context.Clientes.Add(new Cliente
-            {
-                Direccion = "Tegucigalpa",
-                Nombre = "Armando Asunceri",
-                Telefono = "31546875",
-            });
-
             context.SaveChanges();
             base.Seed(context);
         }

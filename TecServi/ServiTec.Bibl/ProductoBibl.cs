@@ -21,18 +21,9 @@ namespace ServiTec.Bibl
 
         public List<Producto> ObtenerProductos()
         {
+<<<<<<< HEAD
             var listadeproductos = this.serviTexContext.Productos
                 .Include("Categoria")
-                .ToList();
-            this.ListadeProductos = listadeproductos;
-            return this.ListadeProductos;
-        }
-
-        public List<Producto> ObtenerProductosActivos()
-        {
-            var listadeproductos = this.serviTexContext.Productos
-                .Include("Categoria")
-                .Where(p => p.Activo)
                 .ToList();
             this.ListadeProductos = listadeproductos;
             return this.ListadeProductos;
@@ -105,6 +96,29 @@ namespace ServiTec.Bibl
                 original.Descripcion = producto.Descripcion;
                 original.Precio = producto.Precio;
                 original.IdCategoria = producto.IdCategoria;
+                this.serviTexContext.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool GuardarProducto(Producto producto)
+        {
+            var original = this.serviTexContext.Productos.FirstOrDefault(p => p.Id == producto.Id);
+
+            if (original == null)
+            {
+                return false;
+            }
+
+            try
+            {
+                original.Descripcion = producto.Descripcion;
+                original.IdCategoria = producto.IdCategoria;
+                original.Precio = producto.Precio;
                 original.UrlImagen = producto.UrlImagen;
                 this.serviTexContext.SaveChanges();
                 return true;
@@ -114,5 +128,11 @@ namespace ServiTec.Bibl
                 return false;
             }
         }
+=======
+            var listadeproductos = this.serviTexContext.Productos.ToList();
+            this.ListadeProductos = listadeproductos;
+            return this.ListadeProductos;
+        }
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
     }
 }

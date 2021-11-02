@@ -5,11 +5,74 @@
 }
 
 <h2>Crear</h2>
+<<<<<<< HEAD
+<hr />
 
 @using (Html.BeginForm("Crear", "Productos", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Producto</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+        </div>
+    </div>
 
+    <div class="form-group">
+        @Html.LabelFor(model => model.IdCategoria, "Categoría", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("IdCategoria", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.IdCategoria, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Precio, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Precio, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Precio, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2"> Seleccionar Imagen </label>
+        <div class="col-md-10">
+            <input type="file" name="imagen" id="imagen" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Activo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.Activo)
+                @Html.ValidationMessageFor(model => model.Activo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Volver a Lista", "Index")
+=======
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
     <div class="form-horizontal">
         <h4>Producto</h4>
         <hr />
@@ -33,14 +96,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.IdCategoria, "Categoría", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("IdCategoria", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("IdCategoria", null,htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.IdCategoria, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-md-2">Seleccionar Imagen </label>
-            <div class="col-md-10">
-                <input type="file" name="imagen" id="imagen" />
             </div>
         </div>
 
@@ -63,5 +120,6 @@
 }
 
 <div>
-    @Html.ActionLink("Regresar a lista", "Index")
+    @Html.ActionLink("Back to List", "Index")
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 </div>

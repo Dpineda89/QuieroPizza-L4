@@ -1,10 +1,17 @@
 ﻿@model IEnumerable<ServiTec.Database.Models.Producto>
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Producto";
 }
 
 <h2>Producto</h2>
+=======
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 
 <p>
     @Html.ActionLink("Crear producto", "Crear")
@@ -21,10 +28,13 @@
             @Html.DisplayNameFor(model => model.Precio)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Categoria)
+<<<<<<< HEAD
+            @Html.DisplayNameFor(model => model.UrlImagen)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UrlImagen)
+=======
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
+            @Html.DisplayNameFor(model => model.Categoria)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Activo)
@@ -44,10 +54,13 @@
         @Html.DisplayFor(modelItem => item.Precio)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.Categoria.Descripcion)
+<<<<<<< HEAD
+        <img src="@item.UrlImagen" alt="@item.Descripcion" style="width:64px; height:auto;" />
     </td>
     <td>
-        <img src="@item.UrlImagen" alt="@item.Descripcion" style="width:64px; height:auto;" />
+=======
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
+        @Html.DisplayFor(modelItem => item.Categoria.Descripcion)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.Activo)

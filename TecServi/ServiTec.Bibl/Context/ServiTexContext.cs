@@ -1,6 +1,4 @@
-﻿using ServiTec.Bibl;
-using ServiTec.Bibl.Models;
-using ServiTec.Database.Models;
+﻿using ServiTec.Database.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -21,12 +19,11 @@ namespace ServiTec.Database.Context
 
         public DbSet<Producto> Productos { get; set; }
 
+<<<<<<< HEAD
         public DbSet<Categoria> Categorias { get; set; }
 
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Orden> Ordenes { get; set; }
-        public DbSet<OrdenDetalle> OrdenDetalle { get; set; }
-
+=======
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

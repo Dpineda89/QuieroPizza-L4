@@ -35,36 +35,54 @@ namespace ServiTec.webAdmin.Controllers
         [HttpPost]
         public ActionResult Crear(Categoria categoria)
         {
+<<<<<<< HEAD
             if (ModelState.IsValid)
             {
                 if (categoria.Descripcion != categoria.Descripcion.Trim())
                 {
-                    ModelState.AddModelError("Descripcion", "La descripción no debe de contener espacios en blanco");
+                    ModelState.AddModelError("Descripcion", "La Descripción no debe contener espacios al inicio o al final");
+
                     return View(categoria);
                 }
+
                 var result = this._categoriasBibl.CrearCategoria(categoria);
                 return RedirectToAction("Index");
             }
+
             return View(categoria);
+=======
+            var result = this._categoriasBibl.CrearCategoria(categoria);
+            return RedirectToAction("Index");
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
         }
 
 
         [HttpPost]
         public ActionResult Editar(Categoria categoria)
         {
+<<<<<<< HEAD
             if (ModelState.IsValid)
             {
                 if (categoria.Descripcion != categoria.Descripcion.Trim())
                 {
-                    ModelState.AddModelError("Descripcion", "La descripción no debe de contener espacios en blanco");
+                    ModelState.AddModelError("Descripcion", "La Descripción no debe contener espacios al inicio o al final");
+
                     return View(categoria);
                 }
-                var result = this._categoriasBibl.CrearCategoria(categoria);
+
+                var result = this._categoriasBibl.EditarCategoria(categoria);
                 return RedirectToAction("Index");
             }
+
             return View(categoria);
         }
+=======
+            var result = this._categoriasBibl.EditarCategoria(categoria);
+            return RedirectToAction("Index");
+        }
 
+
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 
         [HttpPost]
         public ActionResult Eliminar(Categoria categoria)

@@ -22,20 +22,24 @@
             @Html.DisplayNameFor(model => model.Precio)
         </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UrlImagen)
-        </dt>
-
-        <dt>
-            <img src="@Model.UrlImagen" alt="@Model.Descripcion" style="width:150px; height:auto;" />
-        </dt>
-
         <dd>
             @Html.DisplayFor(model => model.Precio)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Categoria)
+<<<<<<< HEAD
+            @Html.DisplayNameFor(model => model.UrlImagen)
+        </dt>
+
+        <dt>
+            <img src="@Model.UrlImagen" alt="@Model.Descripcion" style="width:200px; height:auto;" />
+        </dt>
+
+        <dt>
+            @Html.DisplayFor(model => model.Categoria)
+=======
+            Categoría
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
         </dt>
 
         <dd>
@@ -54,5 +58,9 @@
 </div>
 <p>
     @Html.ActionLink("Editar", "Editar", new { id = Model.Id }) |
-    @Html.ActionLink("Regresar a Lista", "Index")
+<<<<<<< HEAD
+    @Html.ActionLink("Volver a Lista", "Index")
+=======
+    @Html.ActionLink("Back to List", "Index")
+>>>>>>> 0a23368ca8414b2a368072991d98d41a904b86f1
 </p>

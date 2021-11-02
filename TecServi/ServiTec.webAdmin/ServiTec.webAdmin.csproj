@@ -128,10 +128,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
-    <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\OrdenesController.cs" />
-    <Compile Include="Controllers\OrdenesDetalleController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -158,6 +155,7 @@
     <Content Include="Imagenes\g50211-MouseGamer-Logitech-1024-1024.jpg" />
     <Content Include="Imagenes\MSI-G241VC  Curvo 24 FullHD.jpg" />
     <Content Include="Imagenes\portada.jpg" />
+    <Content Include="Imagenes\Quiero Pizza.mkv" />
     <Content Include="Imagenes\WD Blue 250 GB interno SSD-Sata.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -196,19 +194,10 @@
     <Content Include="Views\Productos\Editar.cshtml" />
     <Content Include="Views\Productos\Detalle.cshtml" />
     <Content Include="Views\Productos\Eliminar.cshtml" />
-    <Content Include="Views\Ordenes\Index.cshtml" />
-    <Content Include="Views\Ordenes\Crear.cshtml" />
-    <Content Include="Views\Ordenes\Editar.cshtml" />
-    <Content Include="Views\Ordenes\Detalle.cshtml" />
-    <Content Include="Views\Ordenes\Eliminar.cshtml" />
-    <Content Include="Views\OrdenesDetalle\Index.cshtml" />
-    <Content Include="Views\OrdenesDetalle\Crear.cshtml" />
-    <Content Include="Views\OrdenesDetalle\Eliminar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Clientes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
