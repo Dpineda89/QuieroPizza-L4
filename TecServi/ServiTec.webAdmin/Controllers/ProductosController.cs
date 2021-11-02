@@ -71,7 +71,6 @@ namespace ServiTec.webAdmin.Controllers
                     ModelState.AddModelError("IdCategria", "Seleccione una catgoria");
                     return View(producto);
                 }
-
                 if (imagen != null)
                 {
                     producto.UrlImagen = GuardarImagen(imagen);

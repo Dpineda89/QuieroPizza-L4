@@ -26,7 +26,6 @@ namespace ServiTec.webAdmin.Controllers
 
             return View(listadeOrdenes);
         }
-
         public ActionResult Crear()
         {
             var nuevaOrden = new Orden();
