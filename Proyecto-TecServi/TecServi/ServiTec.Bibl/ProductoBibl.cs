@@ -23,6 +23,9 @@ namespace ServiTec.Bibl
         {
             var listadeproductos = this.serviTexContext.Productos
                 .Include("Categoria")
+                .Where(p => p.Activo)
+                .OrderBy(p => p.Categoria.Descripcion)
+                .ThenBy(p => p.Descripcion)
                 .ToList();
             this.ListadeProductos = listadeproductos;
             return this.ListadeProductos;
@@ -33,6 +36,7 @@ namespace ServiTec.Bibl
             var listadeproductos = this.serviTexContext.Productos
                 .Include("Categoria")
                 .Where(p => p.Activo)
+                .OrderBy(p => p.Descripcion)
                 .ToList();
             this.ListadeProductos = listadeproductos;
             return this.ListadeProductos;
