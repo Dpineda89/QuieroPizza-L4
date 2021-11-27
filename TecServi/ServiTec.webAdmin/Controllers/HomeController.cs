@@ -13,6 +13,5 @@ namespace ServiTec.webAdmin.Controllers
         {
             return View();
         }
-
     }
 }

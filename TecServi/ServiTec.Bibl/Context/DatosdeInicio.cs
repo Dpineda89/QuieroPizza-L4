@@ -21,7 +21,7 @@ namespace ServiTec.Bibl
 
             context.Productos.Add(new Producto
             {
-                UrlImagen = "~/Imagenes/MSI-G241VC  Curvo 24 FullHD.jpg",
+                UrlImagen = "/Imagenes/MSI-G241VC  Curvo 24 FullHD.jpg",
                 Descripcion = " Monitor Curvo 24.0 ",
                 Precio = 2600.00,
                 IdCategoria = categoria.Id,
@@ -29,7 +29,7 @@ namespace ServiTec.Bibl
 
             context.Productos.Add(new Producto
             {
-                UrlImagen = "~/Imagenes/Cable UTP AZUL CAT-5.jpg",
+                UrlImagen = "/Imagenes/Cable UTP AZUL CAT-5.jpg",
                 Descripcion = " Cable UTP Cat-6 caja 232 Pies ",
                 Precio = 1700.00,
                 IdCategoria = categoria.Id,
@@ -37,7 +37,7 @@ namespace ServiTec.Bibl
 
             context.Productos.Add(new Producto
             {
-                UrlImagen = "~/Imagenes/Case-Negro-702Zh5.jpg",
+                UrlImagen = "/Imagenes/Case-Negro-702Zh5.jpg",
                 Descripcion = " Case Army-Z20 Negro 32cm ",
                 Precio = 1100.00,
                 IdCategoria = categoria.Id,
@@ -45,7 +45,7 @@ namespace ServiTec.Bibl
 
             context.Productos.Add(new Producto
             {
-                UrlImagen = "~/Imagenes/Silla_Negra y Rojo-Gamer.jpg",
+                UrlImagen = "/Imagenes/Silla_Negra y Rojo-Gamer.jpg",
                 Descripcion = " Silla Gamer Full Relax ",
                 Precio = 5400.00,
                 IdCategoria = categoria.Id,

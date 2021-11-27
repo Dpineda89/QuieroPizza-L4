@@ -27,7 +27,7 @@ namespace ServiTec.webAdmin.Controllers
         [HttpPost]
         public ActionResult Index(FormCollection data)
         {
-            var nombreUsuario = data["Usuario"];
+            var nombreUsuario = data["usuario"];
             var contrasena = data["contrasena"];
             var usuarioValido = seguridadBibl
             .Autorizar(nombreUsuario, contrasena);
