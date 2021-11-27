@@ -13,7 +13,8 @@ namespace ServiTec.Database.Context
 {
     public class ServiTexContext : DbContext
     {
-        private static string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFileName={Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\ServiTecDB.mdf";
+        private static string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFileName={
+            Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\ServiTecDB.mdf";
         public ServiTexContext()
             : base(connectionString)
         {
@@ -27,11 +28,13 @@ namespace ServiTec.Database.Context
         public DbSet<Orden> Ordenes { get; set; }
         public DbSet<OrdenDetalle> OrdenDetalle { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Bodega> Bodegas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             base.OnModelCreating(modelBuilder);
+            System.Data.Entity.Database.SetInitializer(new DatosdeInicio());
         }
     }
 }

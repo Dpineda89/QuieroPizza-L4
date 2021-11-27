@@ -1,4 +1,4 @@
-using ServiTec.Bibl.Context;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,6 @@ namespace ServiTec.webAdmin
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            System.Data.Entity.Database.SetInitializer(new SeedData());
         }
     }
 }

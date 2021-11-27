@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,10 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Bodega.cs" />
+    <Compile Include="BodegasBibl.cs" />
     <Compile Include="CategoriasBl.cs" />
+    <Compile Include="Context\DatosdeInicio.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="ClientesBibl.cs" />
-    <Compile Include="Context\SeedData.cs" />
     <Compile Include="Context\ServiTexContext.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Orden.cs" />
@@ -64,7 +67,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportedeVentasPorProductoBibl.cs" />
     <Compile Include="ReporteVetasPorProducto.cs" />
-    <Compile Include="Usuario.cs" />
+    <Compile Include="SeguridadBibl.cs" />
+    <Compile Include="Models\Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

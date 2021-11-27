@@ -10,8 +10,8 @@ namespace ServiTec.Controllers
         // GET: Productos
         public ActionResult Index()
         {
-           var productosBl = new ProductoBibl();
-           var listadeProductos = productosBl.ObtenerProductos();
+           var productosBibl = new ProductoBibl();
+           var listadeProductos = productosBibl.ObtenerProductos();
             
             return View(listadeProductos);
         }

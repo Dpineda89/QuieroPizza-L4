@@ -13,8 +13,8 @@ namespace ServiTec.web.Controllers
         //GET:Home
         public ActionResult Index()
         {
-            var productosBl = new ProductoBibl();
-            var listadeProductos = productosBl.ObtenerProductos();
+            var productosBibl = new ProductoBibl();
+            var listadeProductos = productosBibl.ObtenerProductos();
             ViewBag.adminWebSiteUrl = ConfigurationManager.AppSettings["adminWebSiteUrl"];
             return View(listadeProductos);
         }

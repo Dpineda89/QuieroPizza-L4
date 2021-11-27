@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace ServiTec.webAdmin.Controllers
 {
+    [Authorize]
     public class OrdenesController : Controller
     {
         OrdenesBibl _ordenesBibl;

@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace ServiTec.webAdmin.Controllers
 {
+    [Authorize]
     public class ClientesController : Controller
     {
         ClientesBibl _clientesBibL;
