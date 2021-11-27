@@ -40,6 +40,9 @@
                         <li>
                             <a href="/Ordenes" class="sf-box-in">Ordenes</a>
                         </li>
+                        <li>
+                            @Html.ActionLink("Bodegas", "Index", "Bodegas", null, new { @class = "sf-folder-house" })
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +70,7 @@
     <div id="global">
         <div class="container-fluid">
             <div class="panel panel-default">
-                <div class="panel-heading">ServiTec ®</div>
+                <div class="panel-heading" style="background-color:#F44B4D;color:white ">ServiTec ®</div>
                 <div class="panel-body" id="demo-buttons">
                     @RenderBody()
                 </div>
